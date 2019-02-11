@@ -8,6 +8,13 @@
     </section>
   </<aside>
   <div class="col-md-8">
+      <div class="row">
+        <aside class="col-md-4">
+          <section class="post_form">
+            <%= render 'shared/post_form' %>
+          </section>
+        </aside>
+      </div>
     <% if @user.posts.any? %>
       <h3>Posts (<%= @user.posts.count %>)</h3>
       <ol class="posts">
